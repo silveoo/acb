@@ -92,7 +92,7 @@ function startFakeVirus() {
       if (percentage % 8 === 0) virusCode.textContent = randomCode();
       virusFrame = requestAnimationFrame(tick);
     } else {
-      virusResult.textContent = 'Загрузка завершена. Шутка. Никакого вируса нет :)';
+      virusResult.textContent = 'Загрузка завершена.';
       virusScreen.classList.add('is-complete');
       returnButton.focus();
     }
