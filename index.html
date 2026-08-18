@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff7fa">
+  <meta name="description" content="Небольшой сайт, созданный специально для Алёны Богатовой">
+  <title>Для Алёны</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="intro-active">
+  <div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Вступление">
+    <div class="intro__glow intro__glow--one"></div>
+    <div class="intro__glow intro__glow--two"></div>
+    <div class="intro__slides" aria-live="polite">
+      <p class="intro__slide is-visible">Данный сайт был создан<br><em>специально для</em><br>Алёны Богатовой</p>
+      <p class="intro__slide">Если вы не<br>Алёна Богатова,<br><em>пожалуйста, уходите с сайта</em></p>
+      <p class="intro__slide intro__slide--small"><span class="eyebrow">Темный киллер ассасин</span><br>представляет</p>
+      <p class="intro__slide intro__countdown">3</p>
+      <p class="intro__slide intro__countdown">2</p>
+      <p class="intro__slide intro__countdown">1</p>
+    </div>
+    <button class="intro__skip" type="button" id="skipIntro">пропустить</button>
+  </div>
+
+  <main class="page" id="mainContent">
+    <div class="grain" aria-hidden="true"></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__decor hero__decor--left" aria-hidden="true">✦</div>
+      <div class="hero__content">
+        <p class="hero__kicker reveal">небольшое послание для</p>
+        <h1 class="reveal" id="hero-title"><span>Алёна,</span> прив<span class="dot">.</span></h1>
+        <p class="hero__note reveal">У этого сайта пока только первая страница.<br>Но впереди — кое-что особенное.</p>
+        <div class="scroll-hint reveal" aria-hidden="true"><span></span>листай вниз</div>
+      </div>
+      <div class="hero__flower reveal" aria-hidden="true">
+        <span class="petal petal--1"></span><span class="petal petal--2"></span><span class="petal petal--3"></span><span class="petal petal--4"></span><span class="petal petal--5"></span><i></i>
+      </div>
+    </section>
+    <section class="placeholder" aria-label="Продолжение скоро">
+      <p class="reveal">продолжение</p>
+      <h2 class="reveal">скоро здесь<br>будет больше</h2>
+      <span class="placeholder__heart reveal" aria-hidden="true">♡</span>
+    </section>
+  </main>
+
+  <aside class="journey" id="journey" aria-label="Прогресс страницы">
+    <div class="journey__point journey__point--top" aria-hidden="true">✿</div>
+    <div class="journey__track"><span id="progressFill"></span></div>
+    <div class="journey__traveler" id="traveler" aria-hidden="true">♥</div>
+    <div class="journey__point journey__point--bottom" aria-hidden="true">✿</div>
+  </aside>
+</body>
+</html>
